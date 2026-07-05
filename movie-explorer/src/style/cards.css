@@ -1,0 +1,201 @@
+.movie-card {
+    border: 1px solid transparent;
+    width: fit-content;
+    height: fit-content;
+    padding: 3%;
+    margin: 3%;
+    border-radius: 10px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.movie-card #poster {
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffffff;
+}
+.movie-card #movie-info {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#rank{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #010001;
+    color: white;
+    /* border-radius: 50%; */
+    font-weight: bold;
+}
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    padding-left: 5%;
+}
+
+/* Responsiveness (width) */
+/* @media (max-width: 400px) {
+    .movie-card {
+        width: 85vw;
+        gap: 3%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    .movie-card {
+        width: 45vw;
+        gap: 3%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .movie-card {
+        width: 30vw;
+        gap: 3%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .movie-card {
+        width: 22vw;
+        gap: 3%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .movie-card {
+        width: 18vw;
+        gap: 3%;
+    }
+} */
+
+/* Responsiveness (height) */
+/* .movie-card {
+    width: 85vw;
+    height: 55vh;
+    gap: 3%;
+}
+
+@media (min-width: 480px) {
+    .movie-card {
+        width: 80vw;
+        height: 50vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .movie-card {
+        width: 42vw;
+        height: 45vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .movie-card {
+        width: 30vw;
+        height: 42vh;
+    }
+}
+
+@media (min-width: 1280px) {
+    .movie-card {
+        width: 22vw;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 1600px) {
+    .movie-card {
+        width: 18vw;
+        height: 38vh;
+    }
+} */
+
+/* Responsiveness (width)
+@media (max-width: 400px) {
+    .movie-card {
+        width: 70vw;
+        gap: 3%;
+    }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+    .movie-card {
+        width: 75vw;
+        gap: 3%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .movie-card {
+        width: 40vw;
+        gap: 3%;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .movie-card {
+        width: 30vw;
+        gap: 3%;
+    }
+}
+@media (min-width: 1300px) {
+    .movie-card {
+        width: 25vw;
+        gap: 3%;
+    }
+}
+/* Responsiveness (height) */
+/* @media (max-height: 700px) {
+    .movie-card {
+        height: 30vh;
+    }
+}
+@media (min-height: 700px) and (max-height: 900px) {
+    .movie-card {
+        height: 25vh;
+    }
+}
+@media (min-height: 900px) and (max-height: 1000px) {
+    .movie-card {
+        height: 35vh;
+    }
+}
+@media (min-height: 1000px) and (max-height: 1300px) {
+    .movie-card {
+        height: 30vh;
+    }
+}
+@media (min-height: 1300px) {
+    .movie-card {
+        height: 25vh;
+    }
+} */ */
+
+
+
+/* @media (min-width: 400px) and (max-width: 500px) {
+    .movie-card {
+        width: 65vw;
+        height: 25vh;
+        gap: 3%;
+    }
+} */
+/* @media (min-width: 500px) and (max-width: 1300px) and (min-height: 500px) and (max-height: 2000px) {
+    .movie-card {
+        width: 35vw;
+        height: 20vh;
+        gap: 3%;
+    }
+} */
