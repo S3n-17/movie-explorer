@@ -25,11 +25,16 @@ function App() {
         return (jsonData)
     }
     useEffect(() => {
-        // api("harry potter")
-        // api("avengers")
-        // api("batman")
-        api(movies.Search?.[randint(0, movies.Search?.length - 1)]?.Title)
+        api("harry potter")
+        api("lord of the rings")
+        api("the hobbit")
+        api("the matrix")
+        api("interstellar")
+        api("batman")
+        api("spider-man")
+        api("avengers")
     }, [])
+    // movies.Search?.[randint(0, movies.Search?.length - 1)]?.Title)
     console.log("List of movies:", movies)
     function movieCardList() {
         return (movies.Search?.map((movie, index) => (

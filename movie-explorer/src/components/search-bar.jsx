@@ -5,6 +5,7 @@ import { Search } from 'lucide-react';
 const SearchBar = ({ api }) => {
     function inputchange(elem) {
         console.log(elem.target.value)
+        setSearchQuery(elem.target.value)
     }
     const [searchQuery, setSearchQuery] = React.useState('')
     console.log(searchQuery)
