@@ -10,7 +10,7 @@ const MovieCard = ({ poster, title, year, type}) => {
         {/* <div id="rank">{Rank}</div> */}
       </div>
       <div id="movie-info">
-        <hr></hr>
+        <br></br>
         <div id="title">{title}</div>
         <hr></hr>
         <div id="year">{year}</div>
