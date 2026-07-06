@@ -181,7 +181,7 @@ h1{
     .movie-card {
         height: 25vh;
     }
-} */ */
+} */ 
 
 
 
@@ -191,7 +191,8 @@ h1{
         height: 25vh;
         gap: 3%;
     }
-} */
+}
+*/
 /* @media (min-width: 500px) and (max-width: 1300px) and (min-height: 500px) and (max-height: 2000px) {
     .movie-card {
         width: 35vw;
