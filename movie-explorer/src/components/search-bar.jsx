@@ -1,6 +1,7 @@
 import React from 'react'
 import '../style/search-bar.css'
 import { Search } from 'lucide-react';
+import { CircleX } from 'lucide-react';
 
 const SearchBar = ({ api }) => {
     function inputchange(elem) {
@@ -9,11 +10,14 @@ const SearchBar = ({ api }) => {
     }
     const [searchQuery, setSearchQuery] = React.useState('')
     console.log(searchQuery)
+    function cancelSearch() {
+        setSearchQuery('')
+    }
     return (
         <div id="search-bar">
-            <input type="text" placeholder="Search a movie" onChange={inputchange} value={searchQuery} />
+            <input type="text" placeholder="Search a movie" onChange={inputchange} value={searchQuery}/> < CircleX onClick={cancelSearch} />
             {/* <div id="search-icon"> */}
-            <Search onClick={ () => api(searchQuery) } />
+            <Search onClick={ () => api(searchQuery.trim()) } />
             {/* </div> */}
         </div>
 

@@ -7,6 +7,7 @@ import Navbar from './components/navbar.jsx'
 import MovieCard from './components/card.jsx'
 import { Search } from 'lucide-react'
 import SearchBar from './components/search-bar.jsx'
+import { Frown } from 'lucide-react'
 // import { paragraph } from './components/card.jsx'
 // import { search } from './components/search-bar.jsx'
 
@@ -37,15 +38,20 @@ function App() {
     // movies.Search?.[randint(0, movies.Search?.length - 1)]?.Title)
     console.log("List of movies:", movies)
     function movieCardList() {
-        return (movies.Search?.map((movie, index) => (
-            <MovieCard
-                key={index}
-                poster={movie.Poster}
-                title={movie.Title}
-                year={movie.Year}
-                type={movie.Type}
-            />
-        )));
+        if (movies.Search === undefined) {
+            return (<div id="no-movies"><Frown /> No movies found</div>);
+        }
+        else {
+            return (movies.Search.map((movie, index) => (
+                <MovieCard
+                    key={index}
+                    poster={movie.Poster}
+                    title={movie.Title}
+                    year={movie.Year}
+                    type={movie.Type}
+                />
+            )));
+        }
     }
 
     return (
