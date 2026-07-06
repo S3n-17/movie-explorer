@@ -29,8 +29,15 @@ const paragraph = () => {
     </>
   )
 }
+const heading = () => {
+  return (
+    <>
+    <h1>#Movies you might like</h1>
+    </>
+  )
+}
 export default MovieCard
-export { paragraph }
+export { paragraph, heading }
 
 
 
