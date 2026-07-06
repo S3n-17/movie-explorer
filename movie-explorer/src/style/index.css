@@ -65,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background-color: linear-gradient(to bottom, #000000, #0a0910);
+  background-color: linear-gradient(to bottom, #2c2363, #0a0910);
 }
 
 h1,

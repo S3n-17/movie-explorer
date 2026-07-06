@@ -8,7 +8,7 @@ import MovieCard from './components/card.jsx'
 import { Search } from 'lucide-react'
 import SearchBar from './components/search-bar.jsx'
 import { Frown } from 'lucide-react'
-// import { paragraph } from './components/card.jsx'
+import { paragraph } from './components/card.jsx'
 // import { search } from './components/search-bar.jsx'
 
 function App() {
@@ -58,11 +58,12 @@ function App() {
         <div className="App">
             <Navbar />
             <SearchBar api={api} />
-            {/* {paragraph()} */}
+            
             <div className="movies">
 
                 {movieCardList()}
             </div>
+            {paragraph()}
         </div>
 
     )

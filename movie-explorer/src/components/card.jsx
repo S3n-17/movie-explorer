@@ -1,12 +1,13 @@
 import React from 'react'
 import '../style/cards.css'
 import SearchBar from './search-bar.jsx'
+import { ChevronRight } from 'lucide-react'
 
-const MovieCard = ({ poster, title, year, type}) => {
+const MovieCard = ({ poster, title, year, type }) => {
   return (
     <span className="movie-card">
-      <div id="poster">
-        <img src={poster} alt={title} />
+      <div id="poster" style={{ backgroundImage: `url(${poster})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        {/* <img src={poster} alt={title} /> */}
         {/* <div id="rank">{Rank}</div> */}
       </div>
       <div id="movie-info">
@@ -20,11 +21,16 @@ const MovieCard = ({ poster, title, year, type}) => {
     </span>
   )
 }
-// const paragraph = () => {
-//   return (<h1>#Trending :</h1>)
-// }
+const paragraph = () => {
+  return (
+    <>
+    <h1>#More Movies <ChevronRight /></h1>
+    <h4>Click on the arrow to see more movies</h4>
+    </>
+  )
+}
 export default MovieCard
-// export { paragraph }
+export { paragraph }
 
 
 
