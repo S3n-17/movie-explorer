@@ -14,18 +14,30 @@ import Footer from './components/footer.jsx'
 import { heading } from './components/card.jsx'
 
 function App() {
+    const [loading, setLoading] = useState(false)
+    const [movies, setMovies] = useState({})
     function randint(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
-    const [movies, setMovies] = useState({})
+    
+    
     async function api(searchQuery) {
-        const data = await fetch(`https://www.omdbapi.com/?s=${searchQuery}&apikey=3dc346f0`);
+        
+        try {
+            setLoading(true)
+            const data = await fetch(`https://www.omdbapi.com/?s=${searchQuery}&apikey=3dc346f0`);
 
-        const jsonData = await data.json()
-        console.log(jsonData)
-        setMovies(jsonData)
-        console.log("API fetched")
-        return (jsonData)
+            const jsonData = await data.json()
+
+            console.log(jsonData)
+            setMovies(jsonData)
+            console.log("API fetched")
+            return (jsonData)
+        } catch (error) {
+            console.error("Error fetching API data:", error)
+        } finally {
+            setLoading(false)
+        }
     }
     useEffect(() => {
         api("harry potter")
@@ -55,7 +67,16 @@ function App() {
             )));
         }
     }
-
+    if (loading) {
+        return (
+            <div className="loading">
+                <Navbar />
+                <SearchBar api={api} />
+                <div className="loader"><p>Loading...</p></div>
+                <Footer />
+            </div>
+        );
+    }
     return (
         <div className="App">
             <Navbar />
