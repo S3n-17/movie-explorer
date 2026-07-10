@@ -29,15 +29,43 @@ const paragraph = () => {
     </>
   )
 }
-const heading = () => {
+const movie = (show) => {
   return (
     <>
-    <h1>#Movies you might like</h1>
+    <h1>#{show} :</h1>
+    </>
+  )
+}
+const webseries = () => {
+  return (
+    <>
+    <h1>#Web Series you might like</h1>
+    </>
+  )
+}
+const cartoon = () => {
+  return (
+    <>
+    <h1>#Cartoons you might like</h1>
+    </>
+  )
+}
+const drama = () => {
+  return (
+    <>
+    <h1>#Dramas you might like</h1>
+    </>
+  )
+}
+const anime = () => {
+  return (
+    <>
+    <h1>#Anime you might like</h1>
     </>
   )
 }
 export default MovieCard
-export { paragraph, heading }
+export { paragraph, movie, webseries, cartoon, drama, anime }
 
 
 
