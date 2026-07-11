@@ -44,7 +44,7 @@ function App() {
                 <Navbar />
                 <SearchBar api={api} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
                 {movie("Movies")}
-                <Movie showOne={"dhurandhar"} showTwo={"feluda"} showThree={"chronicles of narnia"} val={"movie"}/>
+                <Movie showOne={"avengers"} showTwo={"spider man"} showThree={"chronicles of narnia"} val={"movie"}/>
                 {movie("Dramas")}
                 <Movie showOne={"when i fly towards you"} showTwo={"when life gives you tangerines"} showThree={"the jewel of section e"} val={"drama"}/>
                 {movie("Web Series")}
@@ -110,8 +110,3 @@ export default App
 
 
 
-// async function movieName(searchQuery) {
-//     const [link, setLink] = useState([`http://www.omdbapi.com/?t=${searchQuery}&r&apikey=3dc346f0`])
-// }
-// const data = await fetch(" http://www.omdbapi.com/?t=harry+potter&apikey=3dc346f0")
-// const data = await search()
