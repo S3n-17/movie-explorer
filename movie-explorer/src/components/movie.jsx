@@ -20,7 +20,6 @@ const Movie = ({showOne, showTwo, showThree, val}) => {
             const jsonData = await data.json()
             console.log(jsonData)
             setSuggestionMovie(prev => [...prev, jsonData.Search[0]]);
-            // setSuggestionMovie(suggestionMovie)
             console.log("API fetched")
             return (jsonData)
         } catch (error) {
@@ -54,7 +53,6 @@ const Movie = ({showOne, showTwo, showThree, val}) => {
     useEffect(() => {
         api(showThree)
     }, [])
-    // movies.Search?.[randint(0, movies.Search?.length - 1)]?.Title)
     console.log("List of movies:", suggestionMovie)
     function movieCardList() {
         if (suggestionMovie.length === 0) {

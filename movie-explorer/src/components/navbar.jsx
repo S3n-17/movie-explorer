@@ -8,9 +8,7 @@ const Navbar = () => {
             <div id="logo">MovEx</div>
             <div id="profile">
                 <div id="profile-text">My Profile</div>
-                {/* <div id="icon"> */}
                     <User />
-                {/* </div> */}
             </div>
         </div>
     )

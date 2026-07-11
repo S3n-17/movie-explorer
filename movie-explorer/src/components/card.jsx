@@ -7,8 +7,6 @@ const MovieCard = ({ poster, title, year, type }) => {
   return (
     <span className="movie-card">
       <div id="poster" style={{ backgroundImage: `url(${poster})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        {/* <img src={poster} alt={title} /> */}
-        {/* <div id="rank">{Rank}</div> */}
       </div>
       <div id="movie-info">
         <br></br>
